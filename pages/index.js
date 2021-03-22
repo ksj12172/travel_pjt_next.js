@@ -1,9 +1,19 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import Head from 'next/head';
+import styles from '../styles/Home.module.css';
+import Link from 'next/link';
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div>
+      <h1>All Destinations</h1>
+      <Link href="/destination">
+        <a>See Destination Listing</a>
+      </Link>
+    </div>
+  );
+}
+{
+  /* <div className={styles.container}>
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
@@ -61,5 +71,5 @@ export default function Home() {
         </a>
       </footer>
     </div>
-  )
+   */
 }
