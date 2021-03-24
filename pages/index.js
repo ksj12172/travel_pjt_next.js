@@ -5,9 +5,11 @@ import Link from 'next/link';
 export default function Home() {
   return (
     <div>
-      <h1>All Destinations</h1>
-      <Link href="/destination">
-        <a>See Destination Listing</a>
+      <h1 className={styles.title}>All Destinations</h1>
+      <p className={styles.text}>Loream, ipsum</p>
+      <p className={styles.text}>Loream, ipsum</p>
+      <Link href="/destinations">
+        <a className={styles.btn}>See Destination Listing</a>
       </Link>
     </div>
   );
